@@ -1,13 +1,17 @@
 \documentclass[12pt]{article}
-%	options include 12pt or 11pt or 10pt
-%	classes include article, report, book, letter, thesis
 
+\usepackage[a4paper, total={6in, 10in}]{geometry}
 
-
-\author{Miguel P Xochicale\qquad Chris Baber\\
+\author{Miguel P Xochicale, Chris Baber \\
+% \author{Miguel P Xochicale \qquad Chris Baber \\
+\{map479, c.baber\}@bham.ac.uk \\
+Department of Electronic, Electric and System Engineering\\
 School of Engineering\\
 University of Birmingham, UK}
-\title{Variability in Human Movement and Emotions} %(Friday, 1th December 2017)
+% \title{Towards the Automatic Measurement of Variability in Human Movement and Emotions} %(Friday, 1th December 2017)
+% Variability in Using Nonlinear Time Series Analysis %(Saturday, 2th December 2017)
+% \title{Nonlinear Dynamics in Human Movement and Face Emotions} %(Saturday, 2th December 2017)
+\title{Towards the Analysis of Nonlinear Dynamics in Human Movement and Face Emotions} %(Sunday, 3th December 2017)
 
 
 \date{\today}
@@ -15,38 +19,38 @@ University of Birmingham, UK}
 \begin{document}
 \maketitle
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract of the proposed open paper: a concise and clear description of its
+% objectives, methods, results, and conclusions (with a maximum of 300 words).
 
-1. Abstract of the proposed open paper: a concise and clear description of its
-objectives, methods, results, and conclusions (with a maximum of 300 words).
-
-
-%% EXTRA IDEA: human movement is not noise
-% Recently, Herzfeld et al. \cite{Herzfeld2014}
-% conducted experiments to state that movement variability is not only noise but a
-% source of movement exploration which at certain point of the exploration
-% such variability is becoming a source of movement exploration.
+% Stergiou from Nebraska University
+% Stergiou et al. 2011 \cite{stergiou2011}
 
 
+Movement variability is an inherent feature within and between persons
+and understanding and measurement of movement variability has been well established
+in the previous three decades mainly in areas such as biomechanics, sport science
+and much recently in human-robot interaction.
+With that in mind, we hypothesise that the subtle variations of face emotions
+can be described and quantified in a similar fashion as with the methodologies
+of movement variability.
+Such methodologies are based on nonlinear dynamics, particularly the state space
+reconstruction theorem where the dynamics of an unknown system can be reconstructed
+using one dimensional time series.
+For this work, we explain how the state reconstruction theorem works and
+present preliminary results of the use of the state reconstruction
+to understand the relationship of variability between arm movements, head pose
+estimation and face emotion.
+Particularly, we focus our work on the variability of time series in the face landmarks
+of 18 participants to create a multidimensional representation in the state space
+reconstruction. These preliminary results of the state space reconstruction
+in the context of face emotions lead us to conclude that not only
+the variability of upper body movement can be analysed and quantified
+but also the subtle variability of face emotion transitions
+across time (e.g. excitement to neutral to boredom, etc)
+can be understood and measured using nonlinear dynamics.
 
-2. Equations can be included using LaTeX syntax:
-```
-\begin{equation}\label{eq1}
-E=mc^2
-\end{equation}
-```
-and refer to the equation using Eq.~\ref{eq1}.
 
-3. Special symbols in the abstract should be edited in LaTeX syntax.
-
-4. References can be added into the abstract:
-   Use the LaTeX citation command \cite{key} and add at
-   the end of the abstract:
-
-
-\begin{thebibliography}{10}
-\bibitem{key}
-F. Alonso, R. Nadal, {\it Phys. Rev. Lett.} {\bf 108} 123456 (2012)
-\end{thebibliography}
 
 
 \end{document}

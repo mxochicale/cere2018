@@ -1,8 +1,7 @@
 CERE2018
 ---
 
-Consortium of European Research on Emotion 2018 (CERE2018) - [Website](http://www.cere-emotionconferences.org/)
-
+Consortium of European Research on Emotion 2018 (CERE2018) - [Website](http://www.cere-emotionconferences.org/)w
 
 The Consortium of European Research on Emotion (CERE) is an informal organization
 showcasing the latest research on emotion across Europe and beyond.
@@ -32,7 +31,7 @@ speakers, poster and open paper sessions, and symposia, with cutting-edge
 technology showcased by our sponsors.
 
 # Key dates
-- Abstract submissions for symposia, open papers, and posters are open until 3 December 2017.
+- Abstract submissions for symposia, open papers, and posters are open until 7 December 2017.
 
 - Registration for the event is now open, with an early bird discount available until 9 January 2018.
 
