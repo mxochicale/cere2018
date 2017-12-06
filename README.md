@@ -1,7 +1,7 @@
 CERE2018
 ---
 
-Consortium of European Research on Emotion 2018 (CERE2018) - [Website](http://www.cere-emotionconferences.org/)w
+Consortium of European Research on Emotion 2018 (CERE2018) - [Website](http://www.cere-emotionconferences.org/)
 
 The Consortium of European Research on Emotion (CERE) is an informal organization
 showcasing the latest research on emotion across Europe and beyond.
