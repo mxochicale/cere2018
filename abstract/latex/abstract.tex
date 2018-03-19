@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage[a4paper, total={6in, 10in}]{geometry}
-
+\usepackage{pgfgantt}
 
 \author{Miguel P Xochicale, Chris Baber \\
 % \author{Miguel P Xochicale \qquad Chris Baber \\
@@ -15,6 +15,7 @@ Nonlinear Dynamics}
 \begin{document}
 \maketitle
 
+\section*{Abstract}
 Movement variability is an inherent feature within and between persons.
 Research on measurement and understanding of movement variability has been well
 established in the previous three decades in areas such as biomechanics,
@@ -34,5 +35,25 @@ lead us to conclude that not only the variability of upper body movement can be
 analysed and quantified but also the subtle variability of facial expressions
 across time (e.g. variation of facial expressions from excitement to neutral to boredom, etc)
 can be understood and measured using nonlinear dynamics.
+
+
+\section*{Gantt Chart}
+
+\begin{ganttchart}[
+	hgrid,
+	vgrid,
+	x unit=2mm,
+	time slot format=isodate-yearmonth
+	]{2018-03-01}{2018-04-30}
+\gantttitlecalendar{year,month=shortname} \\
+%\ganttmilestone{training at BrH}{2018-03-26} \\
+\ganttbar{Slides Preparation}{2018-03-01}{2018-04-03} \\
+\ganttbar{Conference}{2018-04-04}{2018-04-05} 
+%\ganttmilestone{conf}{2018-04-04}
+ 
+\end{ganttchart}
+
+
+
 
 \end{document}
