@@ -195,16 +195,18 @@
     \AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{background}}
     \begin{minipage}[b][\paperheight]{\textwidth}
     \vspace*{5mm}
-    \includegraphics[height=20mm]{logo}\par
-    \vspace*{5mm}
+    \includegraphics[height=15mm]{logo}\par
+    \vspace*{2mm}
     \ifx\insertsubtitle\@empty%
     \else%
         {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}%
+	\vspace*{2mm}
     \fi%
     \ifx\insertsubtitle\@empty%
     \else%
-        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
-        \vspace*{5mm}
+        %{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}  \href{https://twitter.com/CERE_Emotion}{\faTwitter @CERE\_Emotion} \#CERE2018 \par }%
+        \vspace*{1mm}
     \fi%
     \ifx\insertdate\@empty%
     \else%
@@ -215,7 +217,16 @@
 
     \ifx\insertauthor\@empty%
     \else%
-        {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}%
+        {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par
+	 \href{https://twitter.com/_mxochicale}{\faTwitter @\_mxochicale}
+	\par}%
+
+
+%        {\usebeamerfont{author} \href{https://twitter.com/_mxochicale}{\faTwitter @\_mxochicale}
+%                                \href{https://github.com/mxochicale}{\faGithub @mxochicale} \par}%
+% 
+
+
     \fi%
     \ifx\insertinstitut\@empty%
     \else%
@@ -245,9 +256,9 @@
     % Add background to title page
     \AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{background}}
     \begin{minipage}[b][\paperheight]{\textwidth}
-    \vspace*{5mm}
-    \includegraphics[height=20mm]{logo}\par
-    \vspace*{5mm}
+    \vspace*{10mm}
+    %\includegraphics[height=20mm]{logo}\par
+    %\vspace*{5mm}
     \ifx\insertsubtitle\@empty%
     \else%
         {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}%
@@ -255,7 +266,8 @@
     \ifx\insertsubtitle\@empty%
     \else%
         % {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
-        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}  \href{https://twitter.com/LibrERobotics}{\faTwitter @LibrERobotics} \#DeepLearning }%
+	\vspace*{2mm}
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}  \href{https://twitter.com/CERE_Emotion}{\faTwitter @CERE\_Emotion} \#CERE2018 }%
         \vspace*{5mm}
     \fi%
     % \ifx\insertdate\@empty%
@@ -462,8 +474,8 @@
     {
     \setbeamertemplate{background canvas}{
         \begin{tikzpicture}[remember picture, overlay,background
-            % rectangle/.style={fill=\bgColor}, show background rectangle]
-            rectangle/.style={fill=hriBlack}, show background rectangle]
+            rectangle/.style={fill=\bgColor}, show background rectangle]
+            % rectangle/.style={fill=hriBlack}, show background rectangle]
             \useasboundingbox (current page.north east) rectangle (current page.south west);
 
             \node at (current page.center){\includegraphics[width=\bgScale\paperwidth,height=\bgScale\paperheight,keepaspectratio]{#2}};

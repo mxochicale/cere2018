@@ -1,6 +1,6 @@
 
 LATEX=lualatex
-# LATEX=pdflatex -shell-escape -interaction=nonstopmode -file-line-error
+#LATEX=pdflatex -shell-escape -interaction=nonstopmode -file-line-error
 
 ## wildcard function get a list of all the * source files in a given directory
 TEXTARGETS=$(wildcard ./presentation*.tex)
@@ -36,7 +36,8 @@ bib: $(TARGET:.tex=.aux)
 %.pdf: %.tex #%.thumbs
 	TEXINPUTS=:./style $(LATEX) --interaction=$(MODE) -shell-escape $<; if [ $$? -gt 0 ]; then echo "Error while compiling $<"; touch $<; fi
 	TEXINPUTS=:./style $(LATEX) --interaction=$(MODE) -shell-escape $<; if [ $$? -gt 0 ]; then echo "Error while compiling $<"; touch $<; fi
-	TEXINPUTS=:./style $(LATEX) --interaction=$(MODE) -shell-escape $<; if [ $$? -gt 0 ]; then echo "Error while compiling $<"; touch $<; fi
+
+#TEXINPUTS=:./style $(LATEX) --interaction=$(MODE) -shell-escape $<; if [ $$? -gt 0 ]; then echo "Error while compiling $<"; touch $<; fi
 
 # paper: $(SVG:.svg=.pdf) $(TARGET)
 paper: $(SVG:.svg=.png) $(TARGET)
