@@ -57,6 +57,10 @@
 %\setbeameroption{hide notes}
 
 
+
+
+
+
 \begin{document}
 
 
@@ -66,8 +70,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \maketitle
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%\closingtitle
 
 
 
@@ -95,82 +97,109 @@ an inherent feature within and between each person's movement.
 
 
 
-
-
-\subsection{Arm Movement Variability}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\imageframe[caption=Movement Variablity]{hri/drawing}
-
-
-\subsection{IMU Time Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\imageframe[caption=IMU Time Series]{timeseries/razor}
-
-
-\subsection{OpenFace Time Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\imageframe[caption=OpenFace Time Series]{timeseries/openface}
-
-
-\subsection{OpenFace Time Series}
-\imageframe[caption=OpenFace Time Series]{openface/openface}
-
-
-
-
-\subsection{Time Varying Facial Expressions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-{
-\begin{frame}{Time Varying Facial Expressions}
-
-
-\end{frame}
-}
-
-
-
-
-
-
-
 \section{State Space Reconstruction}
 
-
 %\subsection{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\imageframe[caption=Uniform Time-Delay Embedding]{utde/drawing}
-
-
+\imageframe[caption=Uniform Time-Delay Embedding]{utde/utde}
 
 
 %\subsection{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\imageframe[caption=]{//}
+\imageframe[caption=Minimum Embedding Dimension ($m$) ]{utde/cao}
+
+
+%\subsection{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\imageframe[caption=Minimum Embedding Delay ($\tau$)]{utde/ami}
+
+
+
+
 
 \section{Experiment and Results}
 
 \subsection{}
-\imageframe[caption=Human-Robot Imitation]{hri/experiment}
+\imageframe[caption=Human-Robot Imitation Activity]{hri/experiment}
+
+\subsection{Arm Movement Variability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\imageframe[caption=Participants]{hri/participants}
 
 
-\subsection{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{
-\begin{frame}{TODO List}
+\subsection{IMU Time Series}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\imageframe[caption=Time Series for IMU]{timeseries/razor}
 
 
-          \begin{enumerate}
-              \item 1
-              \item 2 
-              \item 3 
-          \end{enumerate}
 
-%\badge{/badge/logo_badge}
-\end{frame}
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reconstructed State Spaces}
+\imageframe[caption=RSS ($m 10$ $\tau 10$) for sgzmuvAx]{results/ssrrazor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reconstructed State Spaces}
+\imageframe[caption=Euclidean Distances ($m 10$ $\tau 10$) for IMU ]{results/edrazor}
+
+
+\subsection{OpenFace Time Series}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\imageframe[caption=Time Series for OpenFace pose Tx]{timeseries/openface_Tx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{OpenFace Time Series}
+\imageframe[caption=Time Series for OpenFace Landmarks]{timeseries/openface_x067}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reconstructed State Spaces}
+\imageframe[caption=RSS ($m 10$ $\tau 10$) for zmuvx\_0]{results/ssropenface}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reconstructed State Spaces}
+\imageframe[caption=Euclidean Distances ($m 10$ $\tau 10$) for Openface]{results/edopenface}
+
+
+
+
+
+%
+%\subsection{Time Varying Facial Expressions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%{
+%\begin{frame}{Time Varying Facial Expressions}
+%
+%
+%\end{frame}
+%}
+%
+
+
+%
+%\subsection{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%{
+%\begin{frame}{TODO List}
+%
+%
+%          \begin{enumerate}
+%              \item 1
+%              \item 2 
+%              \item 3 
+%          \end{enumerate}
+%
+%%\badge{/badge/logo_badge}
+%\end{frame}
+%}
+%
+%
+
+
 
 
 \section{Conclusions and Future Work}
