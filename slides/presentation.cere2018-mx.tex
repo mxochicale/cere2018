@@ -71,8 +71,10 @@
 \maketitle
 
 
-
-
+%\begin{frame}{Overview}
+%\tableofcontents
+%\end{frame}
+%
 
 %--------------------------------------------------------------------------
 % Content
@@ -89,11 +91,18 @@
 \paper{Lockhart T, Stergiou N, {\bf New Perspectives in Human Movement Variability}, 2013}
 
 \begin{frame}{What is Movement Variabily?}
+
+\LARGE
 MOVEMENT VARIABILITY is defined as the variations that occur in motor
 performance across multiple repetitions of a task and such behaviour is 
 an inherent feature within and between each person's movement.
 \end{frame}
 }
+
+\subsection{Arm Movement Variability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\imageframe[caption=Variability in Body Movement and Facial Expressions]{hri/participants}
+
 
 
 
@@ -143,11 +152,6 @@ an inherent feature within and between each person's movement.
 \imageframe[caption=Euclidean Distances ($m 10$ $\tau 10$) for IMU ]{results/edrazor}
 
 
-\subsection{OpenFace Time Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\imageframe[caption=Time Series for OpenFace pose Tx]{timeseries/openface_Tx}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{OpenFace Time Series}
 \imageframe[caption=Time Series for OpenFace Landmarks]{timeseries/openface_x067}
@@ -164,40 +168,10 @@ an inherent feature within and between each person's movement.
 
 
 
+\subsection{OpenFace Time Series}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\imageframe[caption=Timer series for head pose estimation are mounted on face landmarks]{problem/problem}
 
-
-%
-%\subsection{Time Varying Facial Expressions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-%{
-%\begin{frame}{Time Varying Facial Expressions}
-%
-%
-%\end{frame}
-%}
-%
-
-
-%
-%\subsection{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%{
-%\begin{frame}{TODO List}
-%
-%
-%          \begin{enumerate}
-%              \item 1
-%              \item 2 
-%              \item 3 
-%          \end{enumerate}
-%
-%%\badge{/badge/logo_badge}
-%\end{frame}
-%}
-%
-%
 
 
 
@@ -210,9 +184,8 @@ an inherent feature within and between each person's movement.
 \begin{frame}{Conclusions Future Work}
 
 \begin{itemize}
-	\item Quantification Arm Movement Variability with Nonlinear Dynamics
-        \item However,
-        \item Timeseries from the landmarks are mounted on the pose location of the head. 
+	\item (+) Quantification for Arm Movement and Head Pose Estimation Variability with Nonlinear Dynamics is possible. However,
+	\item (-) the timeseries from the landmarks are mounted on the pose location of the head. 
 \end{itemize}
 
 \begin{itemize}
@@ -236,10 +209,22 @@ an inherent feature within and between each person's movement.
     \begin{thebibliography}{10}
 
 \beamertemplatearticlebibitems
-  \bibitem{Ho2016}
-      Jostine Ho       
-      \newblock \doublequoted{Facial Emotion Recognition}
-      \newblock GitHub repository (2016), https:// github.com/JostineHo/mememoji [\href{https:// github.com/JostineHo/mememoji}{\faGithub}]
+
+
+  \bibitem{lockhart2013}
+      Lockhart T, Stergiou N 
+      \newblock \doublequoted{New Perspectives in Human Movement Variability}
+	\newblock Ann Biomed Eng. 2013.
+
+  \bibitem{cao1997}
+      Cao Liangyue
+      \newblock \doublequoted{Practical method for determining the minimum embedding dimension of a scalar time series.}
+      \newblock Physica D, 110, 43-50, 1997.  
+
+  \bibitem{xochicale2018}
+      Xochicale M P
+      \newblock \doublequoted{Emotion and Movement Variability: a pilot study}
+      \newblock GitHub repo (2018), https:// github.com/mxochicale/emmov-pilotstudy [\href{https:// github.com/mxochicale/emmov-pilotstudy}{\faGithub}]
 
 
     \end{thebibliography}
