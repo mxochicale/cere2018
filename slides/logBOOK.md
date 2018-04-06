@@ -2,6 +2,15 @@ logBOOK
 ---
 
 
+# HOW TO IMPROVE THE SLIDES
+
+* add references to the figures ( and maybe for my own work using in review)
+* include open research practices [http://datacolada.org/69]
+* add table of contents
+* add papers with print screens in the titles (added: 6april2018 2334)
+
+
+
 
 # TODO
 
